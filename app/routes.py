@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from services import get_next_puzzle
+from app.services import get_next_puzzle
 
 router = APIRouter()
 
