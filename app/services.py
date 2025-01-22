@@ -19,7 +19,7 @@ def pgn_to_fen(pgn, ply):
     board = game.board()
 
     #play the moves up to the specific puzzle position
-    for p, move in enumerate(game.mainline_moves(), start =1):
+    for p, move in enumerate(game.mainline_moves(), start =0):
         board.push(move)
         if p == ply:
             break
